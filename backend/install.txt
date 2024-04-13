@@ -1,0 +1,33 @@
+npm i --save-dev typescript ts-node-dev
+
+tscinfig.json:
+    {
+        "compilerOptions": {
+            "target":"es2015",
+            "outDir":"./build",
+            "strict":true,
+            "module":"CommonJS",
+            "esModuleInterop": true
+        }
+    }
+
+
+package.json:
+"scripts": {
+    "dev":"ts-node-dev --respawn --transpile-only --files src/index.ts",
+    "build":"tsc", //build-eli az egész backend-et javascriptbe
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+npm i ---save-dev eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+
+npm i express
+npm i --save-dev @types/express
+npm i --save-dev @types/node
+
+npm i cors
+npm i --save-dev @types/cors
+
+npm install dotenv mongoose @typegoose/typegoose
+
+npm i express-async-handler --force

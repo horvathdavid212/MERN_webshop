@@ -1,0 +1,13 @@
+npm i react-bootstrap bootstrap
+npm install --save font-awesome // ez lehet nem kell
+npm install react-icons
+npm install react-router-dom
+
+//az ASYNC állapotok kezelése és az adatok lekérése a BACKEND-ből
+npm i @tanstack/react-query
+
+npm i @tanstack/react-query-devtools
+
+npm i react-helmet-async
+
+npm install --save react-toastify
