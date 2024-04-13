@@ -43,4 +43,22 @@
 3. **Frontend indítása**
    ```bash
    npm run dev
+
+
+
+## Docker
+
+Ez az alkalmazás Docker segítségével is futtatható. Ehhez először telepíteni kell a Docker Desktop alkalmazást.
+
+### Alkalmazás Futtatása Dockerrel
+
+Miután telepítette és elindította a Docker Desktopot, a következő parancsot kell használni a project főkönyvtárában az alkalmazás elindításához:
+
+```bash
+docker-compose up
+```
+
+Ez a parancs elindítja az összes szükséges szolgáltatást a docker-compose.yml fájlban megadott konfiguráció alapján. Amint a szolgáltatások elindultak, az alkalmazás frontend része megnyitható a böngészőben a következő címen: http://localhost:5173. Ha csak a szerverre lenne szükség, akkor az ezen a porton megtalálható: http://localhost:5000.
+
+Ez az útmutató leírja, hogyan lehet Docker segítségével elindítani az alkalmazást és hogyan lehet a Docker-t használni a fejlesztés során. Fontos, hogy a `docker-compose.yml` fájlodban a portok és egyéb beállítások megfeleljenek az alkalmazás specifikációinak. Az útmutatóban szereplő portokat és utasításokat szükség szerint módosítani kell a projekt sajátosságaihoz igazodva. Valamint a `Dockerfile` mezőit is át kell írni, ha szükség lenne rá.
    
