@@ -85,6 +85,12 @@ const PlaceOrderPage = () => {
     refetch,
   } = useGetOrderDetailsQuery(createdOrderId!);
 
+  useEffect(() => {
+    console.log("(-------------------);");
+    console.log(order);
+    console.log("(-------------------);");
+  }, [order]);
+
   const placeOrderHandler = async () => {
     try {
       const data = await createOrder({
@@ -163,7 +169,7 @@ const PlaceOrderPage = () => {
             {
               amount: {
                 currency_code: "HUF",
-                value: order!.totalPrice.toString(),
+                value: cart.totalPrice.toString(),
               },
             },
           ],
@@ -180,11 +186,13 @@ const PlaceOrderPage = () => {
           toast.success("Rendelés fizetve");
         } catch (err) {
           toast.error(getError(err as ApiError));
+          console.log(err);
         }
       });
     },
     onError: (err) => {
       toast.error(getError(err as ApiError));
+      console.log(err);
     },
   };
 
