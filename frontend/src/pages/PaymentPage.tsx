@@ -53,6 +53,7 @@ export default function PaymentMethodPage() {
 
       <FormControl component="form" onSubmit={submitHandler}>
         <RadioGroup
+          id="paymentMethod"
           aria-labelledby="payment-method-label"
           name="paymentMethod"
           value={paymentMethodName}
@@ -61,6 +62,7 @@ export default function PaymentMethodPage() {
           <FormControlLabel value="PayPal" control={<Radio />} label="PayPal" />
           <FormControlLabel value="Stripe" control={<Radio />} label="Stripe" />
           <FormControlLabel
+            id="utánvét"
             value="Utánvét"
             control={<Radio />}
             label="Utánvét"

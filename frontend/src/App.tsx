@@ -136,13 +136,18 @@ const App = () => {
               )}
             </Button>
 
-            <Button color="inherit" component={Link} to="/favorites">
+            <Button
+              id="favoritesButton"
+              color="inherit"
+              component={Link}
+              to="/favorites"
+            >
               <FavoriteIcon />
             </Button>
 
             {userInfo ? (
               <div>
-                <Button color="inherit" onClick={handleMenu}>
+                <Button id="userButton" color="inherit" onClick={handleMenu}>
                   {userInfo.name}
                 </Button>
                 <Menu
@@ -161,6 +166,7 @@ const App = () => {
                   onClose={handleClose}
                 >
                   <MenuItem
+                    id="orderHistoryButton"
                     component={Link}
                     to="/orderhistory"
                     onClick={handleClose}
@@ -178,7 +184,12 @@ const App = () => {
                 </Menu>
               </div>
             ) : (
-              <Button color="inherit" component={Link} to="/signin">
+              <Button
+                id="loginButton"
+                color="inherit"
+                component={Link}
+                to="/signin"
+              >
                 Belépés
               </Button>
             )}

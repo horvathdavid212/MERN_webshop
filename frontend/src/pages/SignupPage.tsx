@@ -131,6 +131,7 @@ export default function SignupPage() {
             onChange={(e) => setConfirmPassword(e.target.value)}
           />
           <Button
+            id="signupButton"
             type="submit"
             fullWidth
             variant="contained"

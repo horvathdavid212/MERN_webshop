@@ -29,6 +29,7 @@ export default function SearchBox() {
       elevation={1}
     >
       <InputBase
+        id="searchBox"
         sx={{ ml: 2, flex: 1 }}
         placeholder="Termékek keresése..."
         inputProps={{ "aria-label": "search products" }}

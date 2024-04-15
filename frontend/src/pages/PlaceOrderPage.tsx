@@ -363,6 +363,7 @@ const PlaceOrderPage = () => {
                   <Grid container spacing={2} alignItems="center">
                     <Grid item xs={6}>
                       <TextField
+                        id="couponCode"
                         fullWidth
                         label="Kuponkód"
                         variant="outlined"

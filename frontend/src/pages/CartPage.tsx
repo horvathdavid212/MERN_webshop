@@ -133,6 +133,7 @@ export default function CartPage() {
                 ft
               </Typography>
               <Button
+                id="checkoutNextButton"
                 variant="contained"
                 color="primary"
                 fullWidth

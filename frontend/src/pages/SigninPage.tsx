@@ -100,6 +100,7 @@ export default function SigninPage() {
             onChange={(e) => setPassword(e.target.value)}
           />
           <Button
+            id="loginButtonLOGIN"
             type="submit"
             fullWidth
             variant="contained"
@@ -116,6 +117,7 @@ export default function SigninPage() {
           )}
           Új vásárló?{" "}
           <Link
+            id="signupLink"
             component={RouterLink}
             to={`/signup?redirect=${redirect}`}
             variant="body2"

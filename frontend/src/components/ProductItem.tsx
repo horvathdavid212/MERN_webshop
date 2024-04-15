@@ -118,6 +118,7 @@ const ProductItem = ({ product }: { product: Product }) => {
           aria-label="add to wishlist"
           color="secondary"
           onClick={toggleFavoriteHandler}
+          id="favoriteButton"
         >
           {isFavorite ? <FavoriteIcon /> : <FavoriteBorderIcon />}
         </IconButton>
